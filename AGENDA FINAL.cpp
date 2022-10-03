@@ -47,17 +47,17 @@ Contato agenda[tam];
 //		char busca2[13];
 		
 		do{
-        puts ("");
-        puts("**************AGENDA**************");
-        puts ("");
-        puts ("       :ESCOLHA UMA OPCAO:");
-        puts ("---------------------------------");
-        puts("1) Cadastrar Contatos.");
-        puts("2) Buscar Contato.");
-        puts("3) Exibir Todos os Contatos.");
-        puts("4) Quantidade por DDD informado.");
-        puts("5) Sair.");
-        puts ("---------------------------------");
+        puts("+----------------------------------+");
+        puts("|************* Agenda *************|");
+        puts("|----------------------------------|");
+        puts("|       :ESCOLHA UMA OPÃ‡ÃƒO:        |");
+        puts("|- - - - - - - - - - - - - - - - - |");
+        puts("| 1) Cadastrar Contatos            |");
+        puts("| 2) Buscar Contato.               |");
+        puts("| 3) Exibir Todos os Contatos.     |");
+        puts("| 4) Quantidade por DDD informado. |");
+        puts("| 5) Sair.                         |");
+        puts("+----------------------------------+");
         
         enter();
 
@@ -102,13 +102,13 @@ Contato agenda[tam];
 		
 		return 0;
 	}
-// Funções.
+// Funï¿½ï¿½es.
 
-// Função Limpar ENTER.
+// Funï¿½ï¿½o Limpar ENTER.
 
 void enter(void) { fflush(stdin); }
 
-// Função para cadastrar contato.
+// Funï¿½ï¿½o para cadastrar contato.
 
 void cadastro (void){
 
@@ -165,7 +165,7 @@ void cadastro (void){
     }while (validacao == 0);    
 }
 
-// Função para buscar contato.
+// Funï¿½ï¿½o para buscar contato.
 
 /*void consulta (char busca[13]){
 
@@ -174,7 +174,7 @@ void cadastro (void){
 
 }
 
-// Função para Exibir todos os contatos cadastrados.
+// Funï¿½ï¿½o para Exibir todos os contatos cadastrados.
 
 void consulta (char busca){
 	
@@ -184,7 +184,7 @@ void consulta (char busca){
 	
 }
 
-// Função para buscar contato pelo DDD informado.
+// Funï¿½ï¿½o para buscar contato pelo DDD informado.
 
 void buscaDDD (int busca2){
 	
@@ -194,8 +194,8 @@ void buscaDDD (int busca2){
 }
 */
 	
-// Função para validar E-mail
-// Ex: sequência maior que 2 caracteres; seguido de um @; terminado com o sufixo .COM
+// Funï¿½ï¿½o para validar E-mail
+// Ex: sequï¿½ncia maior que 2 caracteres; seguido de um @; terminado com o sufixo .COM
 
 int valida_email (char email[50]){
 	
@@ -248,8 +248,8 @@ int valida_email (char email[50]){
 
 }
 	
-// Função para validar numero de telefone -
-// Ex. deve começar com 0; deve conter 11 ou 12 dígitos numéricos (valores entre 0-9).
+// Funï¿½ï¿½o para validar numero de telefone -
+// Ex. deve comeï¿½ar com 0; deve conter 11 ou 12 dï¿½gitos numï¿½ricos (valores entre 0-9).
 
 int valida_telefone (char numero[13]){
 	
@@ -276,7 +276,7 @@ int valida_telefone (char numero[13]){
     }		
 }
 	
-// Função para validar dia.
+// Funï¿½ï¿½o para validar dia.
 
 int valida_dia (int day){
 
@@ -296,7 +296,7 @@ int valida_dia (int day){
     }
 }
 
-//Função para validar mês.
+//Funï¿½ï¿½o para validar mï¿½s.
 
 int valida_mes (int month){
 
@@ -316,7 +316,7 @@ int valida_mes (int month){
     }
 }
 
-//Função para validar ano.
+//Funï¿½ï¿½o para validar ano.
 
 int valida_ano (int year){
 
@@ -335,14 +335,3 @@ int valida_ano (int year){
         return 1;
     }
 }
-
-
-
-	
-	
-	
-	
-	
-	
-	
-
